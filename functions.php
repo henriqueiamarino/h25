@@ -75,10 +75,12 @@ function im_h25_random_accent_script() {
 	<script>
 	( function () {
 		var accents = [ '#ff4a1a', '#FFDD33', '#FF4AB5', '#4DB6FF' ];
-		document.body.style.setProperty(
-			'--wp--preset--color--contrast',
-			accents[ Math.floor( Math.random() * accents.length ) ]
-		);
+		var last = null;
+		try { last = localStorage.getItem( 'im-h25-accent' ); } catch ( e ) {}
+		var pool = accents.filter( function ( c ) { return c !== last; } );
+		var pick = pool[ Math.floor( Math.random() * pool.length ) ];
+		try { localStorage.setItem( 'im-h25-accent', pick ); } catch ( e ) {}
+		document.body.style.setProperty( '--wp--preset--color--contrast', pick );
 	} )();
 	</script>
 	<?php
