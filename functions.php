@@ -74,7 +74,7 @@ function im_h25_random_accent_script() {
 	?>
 	<script>
 	( function () {
-		var accents = [ '#ff4a1a', '#FFDD33', '#FF4AB5', '#4DB6FF' ];
+		var accents = [ '#ff4a1a', '#FFDD33', '#FF4AB5', '#4DB6FF', '#d2b579', '#9580ff' ];
 		var last = null;
 		try { last = localStorage.getItem( 'im-h25-accent' ); } catch ( e ) {}
 		var pool = accents.filter( function ( c ) { return c !== last; } );

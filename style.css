@@ -141,12 +141,12 @@ a {
 
 ::-moz-selection {
   color: var(--wp--preset--color--primary);
-  background: var(--wp--preset--color--base);
+  background: var(--wp--preset--color--tertiary);
 }
 
 ::selection {
   color: var(--wp--preset--color--primary);
-  background: var(--wp--preset--color--base);
+  background: var(--wp--preset--color--tertiary);
 }
 
 /* ==============================================================
