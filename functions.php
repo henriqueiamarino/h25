@@ -59,26 +59,31 @@ endif;
 add_action( 'wp_enqueue_scripts', 'im_h25_styles' );
 
 /**
- * Add a random palette class on every visit.
+ * Randomize the Contrast accent on every visit.
  *
- * Runs client-side at wp_body_open so full-page caching can't pin a single
- * palette for every visitor; without JavaScript the default palette applies.
+ * The palette is defined once in theme.json; only the contrast preset
+ * rotates, by setting its custom property client-side at wp_body_open so
+ * full-page caching can't pin one accent. Without JavaScript the default
+ * (orange) applies.
  *
- * @since I’m H25 1.0.2
+ * @since I’m H25 1.0.5
  *
  * @return void
  */
-function im_h25_random_palette_script() {
+function im_h25_random_accent_script() {
 	?>
 	<script>
 	( function () {
-		var palettes = [ 'palette-orange', 'palette-yellow', 'palette-pink', 'palette-blue' ];
-		document.body.classList.add( palettes[ Math.floor( Math.random() * palettes.length ) ] );
+		var accents = [ '#ff4a1a', '#FFDD33', '#FF4AB5', '#4DB6FF' ];
+		document.body.style.setProperty(
+			'--wp--preset--color--contrast',
+			accents[ Math.floor( Math.random() * accents.length ) ]
+		);
 	} )();
 	</script>
 	<?php
 }
-add_action( 'wp_body_open', 'im_h25_random_palette_script' );
+add_action( 'wp_body_open', 'im_h25_random_accent_script' );
 
 /**
  * Relabel the Categories dropdown placeholder, server-side and translatable.

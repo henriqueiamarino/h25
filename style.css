@@ -7,7 +7,7 @@ Description: A personal site crafted by a professional theme creator at Automatt
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 7.2
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: im-h25
@@ -147,46 +147,6 @@ a {
 ::selection {
   color: var(--wp--preset--color--primary);
   background: var(--wp--preset--color--base);
-}
-
-/* ==============================================================
-   COLOR PALETTE MODES (RANDOM PER LOAD)
-============================================================== */
-
-body.palette-orange {
-  --wp--preset--color--base:        #FFFFFF;
-  --wp--preset--color--contrast:    #EC5932;
-  --wp--preset--color--primary:     #080808;
-  --wp--preset--color--secondary:   #030303;
-  --wp--preset--color--tertiary:    #03030326;
-  --wp--preset--color--quaternary:  #F2F3F4;
-}
-
-body.palette-yellow {
-  --wp--preset--color--base:        #FFFFFF;
-  --wp--preset--color--contrast:    #FFDD33;
-  --wp--preset--color--primary:     #080808;
-  --wp--preset--color--secondary:   #030303;
-  --wp--preset--color--tertiary:    #03030326;
-  --wp--preset--color--quaternary:  #F2F3F4;
-}
-
-body.palette-pink {
-  --wp--preset--color--base:        #FFFFFF;
-  --wp--preset--color--contrast:    #FF4AB5;
-  --wp--preset--color--primary:     #080808;
-  --wp--preset--color--secondary:   #030303;
-  --wp--preset--color--tertiary:    #03030326;
-  --wp--preset--color--quaternary:  #F2F3F4;
-}
-
-body.palette-blue {
-  --wp--preset--color--base:        #FFFFFF;
-  --wp--preset--color--contrast:    #4DB6FF;
-  --wp--preset--color--primary:     #080808;
-  --wp--preset--color--secondary:   #030303;
-  --wp--preset--color--tertiary:    #03030326;
-  --wp--preset--color--quaternary:  #F2F3F4;
 }
 
 /* ==============================================================
