@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: single
+ * Title: Single
  * Slug: im-h25/single
  * Inserter: no
  */

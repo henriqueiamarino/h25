@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: index
+ * Title: Index
  * Slug: im-h25/index
  * Inserter: no
  */

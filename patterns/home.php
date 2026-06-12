@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: home
+ * Title: Home
  * Slug: im-h25/home
  * Inserter: no
  */

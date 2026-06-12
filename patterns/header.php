@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: header
+ * Title: Header
  * Slug: im-h25/header
  * Inserter: no
  */
@@ -9,7 +9,7 @@
 <div class="wp-block-group alignwide has-contrast-background-color has-background" id="Header" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"tagName":"main","metadata":{"name":"Header Wrapper"},"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"1px","bottom":"1px"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
 <main class="wp-block-group alignwide has-tertiary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:1px;padding-bottom:1px"><!-- wp:group {"metadata":{"name":"Header Columns"},"align":"wide","style":{"spacing":{"blockGap":"1px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"stretch"}} -->
 <div class="wp-block-group alignwide"><!-- wp:cover {"dimRatio":0,"isUserOverlayColor":true,"minHeight":80,"isDark":false,"metadata":{"name":"Site Logo"},"className":"tint-cover","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"radius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover is-light tint-cover" style="border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:80px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:site-logo {"width":88,"shouldSyncIcon":true,"style":{"color":{"duotone":["#26221c","#FAFAFA"]}}} /--></div></div>
+<div class="wp-block-cover is-light tint-cover" style="border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:80px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:site-logo {"width":88,"shouldSyncIcon":true,"style":{"color":{"duotone":"var:preset|duotone|duotone-default"}}} /--></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:group {"metadata":{"name":"Stacked Rows"},"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"blockGap":"1px"},"dimensions":{"minHeight":"90%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between","flexWrap":"nowrap"}} -->

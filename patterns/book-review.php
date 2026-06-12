@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: book-review
+ * Title: Book Review
  * Slug: im-h25/book-review
  * Inserter: no
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: sidebar-topics
+ * Title: Sidebar Topics
  * Slug: im-h25/sidebar-topics
  * Inserter: no
  */

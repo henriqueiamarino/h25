@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: sidebar-author
+ * Title: Sidebar Author
  * Slug: im-h25/sidebar-author
  * Inserter: no
  */

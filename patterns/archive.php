@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: archive
+ * Title: Archive
  * Slug: im-h25/archive
  * Inserter: no
  */

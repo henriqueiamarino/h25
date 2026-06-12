@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Section title
+ * Title: Section Title
  * Slug: im-h25/section-title
- * Categories: About
+ * Categories: text
  */
 ?>
 <!-- wp:heading {"level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"600","letterSpacing":"0.025rem","textTransform":"uppercase"}},"fontSize":"x-small"} -->

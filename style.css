@@ -7,7 +7,7 @@ Description: A personal site crafted by a professional theme creator at Automatt
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 7.2
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: im-h25
@@ -157,13 +157,13 @@ figure figcaption,
 ============================================================== */
 
 ::-moz-selection {
-  color: #030201;
-  background: #fafafa;
+  color: var(--wp--preset--color--primary);
+  background: var(--wp--preset--color--base);
 }
 
 ::selection {
-  color: #030201;
-  background: #fafafa;
+  color: var(--wp--preset--color--primary);
+  background: var(--wp--preset--color--base);
 }
 
 /* ==============================================================
@@ -184,7 +184,7 @@ figure figcaption,
 	color: var(--wp--preset--color--primary);
 	border: 1px solid var(--wp--preset--color--tertiary);
 	border-radius: 2px;
-	font-family: var(--wp--preset--font-family--body);
+	font-family: var(--wp--preset--font-family--manrope);
 	font-size: var(--wp--preset--font-size--x-small);
 	line-height: 1;
 	padding: 0.6em 2.4em 0.6em 0.9em;
@@ -336,5 +336,5 @@ body.palette-blue {
 ============================================================== */
 
 .wp-block-audio audio::-webkit-media-controls-panel {
-  background-color: #ffffff;
+  background-color: var(--wp--preset--color--base);
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: author
+ * Title: Author
  * Slug: im-h25/author
  * Inserter: no
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: search
+ * Title: Search
  * Slug: im-h25/search
  * Inserter: no
  */

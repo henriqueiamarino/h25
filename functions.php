@@ -59,50 +59,40 @@ endif;
 add_action( 'wp_enqueue_scripts', 'im_h25_styles' );
 
 /**
- * Add a random palette class on every page load.
+ * Add a random palette class on every visit.
+ *
+ * Runs client-side at wp_body_open so full-page caching can't pin a single
+ * palette for every visitor; without JavaScript the default palette applies.
+ *
+ * @since I’m H25 1.0.2
+ *
+ * @return void
  */
-function hventicinque_random_palette( $classes ) {
-
-	$palettes = array(
-		'palette-orange',
-		'palette-yellow',
-		'palette-pink',
-		'palette-blue',
-	);
-
-	$classes[] = $palettes[ array_rand( $palettes ) ];
-
-	return $classes;
-}
-add_filter( 'body_class', 'hventicinque_random_palette' );
-
-/**
- * Change default "Select Category" text in Categories dropdown block.
- * Outputs a small inline script in the footer.
- */
-function hventicinque_dropdown_label_js() {
-	if ( is_admin() ) {
-		return;
-	}
+function im_h25_random_palette_script() {
 	?>
 	<script>
-	(function() {
-		function updateCategoryPlaceholder() {
-			document.querySelectorAll('.wp-block-categories-dropdown select').forEach(function(select) {
-				var first = select.querySelector('option[value="-1"]');
-				if (first) {
-					first.textContent = 'Read by Category';
-				}
-			});
-		}
-
-		if (document.readyState === 'loading') {
-			document.addEventListener('DOMContentLoaded', updateCategoryPlaceholder);
-		} else {
-			updateCategoryPlaceholder();
-		}
-	})();
+	( function () {
+		var palettes = [ 'palette-orange', 'palette-yellow', 'palette-pink', 'palette-blue' ];
+		document.body.classList.add( palettes[ Math.floor( Math.random() * palettes.length ) ] );
+	} )();
 	</script>
 	<?php
 }
-add_action( 'wp_footer', 'hventicinque_dropdown_label_js' );
+add_action( 'wp_body_open', 'im_h25_random_palette_script' );
+
+/**
+ * Relabel the Categories dropdown placeholder, server-side and translatable.
+ *
+ * @since I’m H25 1.0.2
+ *
+ * @param string $block_content Rendered block HTML.
+ * @return string
+ */
+function im_h25_categories_dropdown_label( $block_content ) {
+	return str_replace(
+		'>' . esc_html__( 'Select Category' ) . '<',
+		'>' . esc_html__( 'Read by Category', 'im-h25' ) . '<',
+		$block_content
+	);
+}
+add_filter( 'render_block_core/categories', 'im_h25_categories_dropdown_label' );
