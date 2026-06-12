@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Home
+ * Title: home
  * Slug: im-h25/home
  * Inserter: no
  */
@@ -152,7 +152,7 @@ echo sprintf( esc_html__( '%1$s+%2$s', 'im-h25' ), '<a href="' . esc_url( '/cate
 
 <!-- wp:paragraph -->
 <p><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( 'After enjoying books, I design covers to make books forever mine. %1$sMore about it%2$s.', 'im-h25' ), '<a href="' . esc_url( 'https://iamarino.com/books/' ) . '">', '</a>' ); ?></p>
+echo sprintf( esc_html__( 'After enjoying books, I design covers to make them forever mine. %1$sMore%2$s.', 'im-h25' ), '<a href="' . esc_url( 'https://iamarino.com/books/' ) . '">', '</a>' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
