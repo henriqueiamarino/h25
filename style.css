@@ -1,0 +1,340 @@
+/*
+Theme Name: I’m H25
+Theme URI: https://iamarino.com/im-h25
+Author: Henrique Iamarino
+Author URI: https://iamarino.com
+Description: A personal site crafted by a professional theme creator at Automattic. If you’re a creative person, think about using this theme to blog more, share your process and passions, and make sharing a regular part of your routine.
+Requires at least: 6.9
+Tested up to: 6.9
+Requires PHP: 7.2
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: im-h25
+Tags: one-column, two-columns, featured-images, full-site-editing, block-patterns, rtl-language-support, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, blog
+
+/* ==============================================================
+   TYPOGRAPHY
+============================================================== */
+
+h1, h2, h3, h4, h5, h6,
+blockquote,
+caption,
+figcaption {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* ==============================================================
+   LINKS
+   Ref: https://github.com/WordPress/gutenberg/issues/42319
+============================================================== */
+
+a {
+  text-decoration-thickness: 0.025em !important;
+  text-underline-offset: 0.15em;
+}
+
+/* ==============================================================
+   BUTTONS
+============================================================== */
+
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):hover {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--base);
+  border-color: var(--wp--preset--color--secondary);
+}
+
+/* ==============================================================
+   IMAGE CAPTIONS (modern + legacy coverage)
+============================================================== */
+
+.wp-element-caption,
+.wp-caption-text,
+figure.wp-block-image figcaption,
+figure figcaption,
+.wp-block-image figcaption,
+.blocks-gallery-caption,
+.wp-block-embed figcaption,
+.wp-block-video figcaption,
+.wp-block-audio figcaption,
+.wp-block-table figcaption {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+}
+
+/* ==============================================================
+   LAYOUT UTILITIES
+============================================================== */
+
+/* Stretch column vertically */
+.col-stretch {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Equal height for sibling columns */
+.columns-equal {
+  align-items: stretch;
+}
+
+/* Grid fill column */
+.columns-equal > .wp-block-column.col-grid-fill {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 0;
+}
+
+/* Stretch Query Loop area */
+.columns-equal > .wp-block-column.col-grid-fill > .ql-stretch {
+  grid-row: 2;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Allow posts area to grow */
+.columns-equal > .wp-block-column.col-grid-fill > .ql-stretch > .wp-block-post-template {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Keep pagination anchored */
+.columns-equal > .wp-block-column.col-grid-fill > .ql-stretch .wp-block-query-pagination {
+  margin-top: auto;
+}
+
+/* ==============================================================
+   UTILITIES
+============================================================== */
+
+/* Remove underline from links inside containers */
+.no-underline a {
+  text-decoration: none;
+}
+
+/* Layering helper */
+.is-overlapping {
+  position: relative;
+  z-index: 1;
+}
+
+/* Stack Card: clip featured image to rounded wrapper */
+.stack-card {
+	overflow: hidden;
+}
+
+/* ==============================================================
+   HOVER INVERT UTILITY (TEXT/BLOCKS)
+============================================================== */
+
+.hover-invert {
+  background-color: var(--wp--preset--color--base) !important;
+  color: var(--wp--preset--color--primary) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.hover-invert:hover {
+  background-color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--base) !important;
+}
+
+.hover-invert :where(a, p, h1, h2, h3, h4, h5, h6) {
+  color: inherit !important;
+}
+
+.hover-invert .wp-block-button__link {
+  color: inherit !important;
+  background: transparent !important;
+  border-color: currentColor !important;
+}
+
+/* ==============================================================
+   CUSTOM SELECTION
+============================================================== */
+
+::-moz-selection {
+  color: #030201;
+  background: #fafafa;
+}
+
+::selection {
+  color: #030201;
+  background: #fafafa;
+}
+
+/* ==============================================================
+   CATEGORIES DROPDOWN
+============================================================== */
+
+.wp-block-categories-dropdown {
+	position: relative;
+	display: block;
+}
+
+.wp-block-categories-dropdown select {
+	appearance: none;
+	width: 100%;
+	min-width: 160px;
+	max-width: 100%;
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--primary);
+	border: 1px solid var(--wp--preset--color--tertiary);
+	border-radius: 2px;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--x-small);
+	line-height: 1;
+	padding: 0.6em 2.4em 0.6em 0.9em;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+	transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.wp-block-categories-dropdown select:hover {
+	border-color: var(--wp--preset--color--tertiary);
+}
+
+.wp-block-categories-dropdown select:focus {
+	outline: none;
+	border-color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-categories-dropdown::after {
+	content: "▾";
+	position: absolute;
+	right: 0.9em;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	font-size: var(--wp--preset--font-size--x-small);
+	color: var(--wp--preset--color--tertiary);
+}
+
+/* ==============================================================
+   COLOR PALETTE MODES (RANDOM PER LOAD)
+============================================================== */
+
+body.palette-orange {
+  --wp--preset--color--base:        #FFFFFF;
+  --wp--preset--color--contrast:    #EC5932;
+  --wp--preset--color--primary:     #080808;
+  --wp--preset--color--secondary:   #030303;
+  --wp--preset--color--tertiary:    #03030326;
+  --wp--preset--color--quaternary:  #F2F3F4;
+}
+
+body.palette-yellow {
+  --wp--preset--color--base:        #FFFFFF;
+  --wp--preset--color--contrast:    #FFDD33;
+  --wp--preset--color--primary:     #080808;
+  --wp--preset--color--secondary:   #030303;
+  --wp--preset--color--tertiary:    #03030326;
+  --wp--preset--color--quaternary:  #F2F3F4;
+}
+
+body.palette-pink {
+  --wp--preset--color--base:        #FFFFFF;
+  --wp--preset--color--contrast:    #FF4AB5;
+  --wp--preset--color--primary:     #080808;
+  --wp--preset--color--secondary:   #030303;
+  --wp--preset--color--tertiary:    #03030326;
+  --wp--preset--color--quaternary:  #F2F3F4;
+}
+
+body.palette-blue {
+  --wp--preset--color--base:        #FFFFFF;
+  --wp--preset--color--contrast:    #4DB6FF;
+  --wp--preset--color--primary:     #080808;
+  --wp--preset--color--secondary:   #030303;
+  --wp--preset--color--tertiary:    #03030326;
+  --wp--preset--color--quaternary:  #F2F3F4;
+}
+
+/* ==============================================================
+   GLOBAL DUOTONE → FULL COLOR ON HOVER
+   Premium easing + subtle zoom
+   Optimized for WP 6.9 Global Styles
+============================================================== */
+
+/* Base transition (smooth editorial feel) */
+.wp-block-post-featured-image img,
+.wp-block-cover .wp-block-cover__image-background {
+  transition:
+    filter 0.35s cubic-bezier(.4,0,.2,1),
+    transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* Featured Image hover */
+.wp-block-post-featured-image:hover img {
+  filter: none !important;
+  transform: scale(1.04);
+}
+
+/* Cover hover */
+.wp-block-cover:hover .wp-block-cover__image-background {
+  filter: none !important;
+  transform: scale(1.04);
+}
+
+/* Fallback if duotone is applied on wrapper */
+.wp-block-post-featured-image:hover,
+.wp-block-cover:hover {
+  filter: none !important;
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .wp-block-post-featured-image img,
+  .wp-block-cover .wp-block-cover__image-background {
+    transition: filter 0.2s ease;
+    transform: none !important;
+  }
+}
+
+/* ==============================================================
+   MEDIA CLIPPING — prevent zoom bleed
+============================================================== */
+
+/* Featured Image wrapper */
+.wp-block-post-featured-image {
+  overflow: hidden;
+}
+
+/* Cover wrapper */
+.wp-block-cover {
+  overflow: hidden;
+}
+
+/* ==============================================================
+   EDITOR-ONLY OVERRIDES
+============================================================== */
+
+/* Visually hide editor-canvas accessibility labels that the block library
+   relies on but doesn't visually hide on its own:
+   — Navigation block's aria-describedby target (.wp-block-navigation__description)
+   — Categories block's label and any block using Gutenberg's CSS-Modules
+     hashed __visually-hidden class (exposed via [data-visually-hidden])
+   These must remain in the DOM/a11y tree but shouldn't push layout. */
+.editor-styles-wrapper .wp-block-navigation__description,
+.editor-styles-wrapper [data-visually-hidden] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* ==============================================================
+   AUDIO PLAYER
+============================================================== */
+
+.wp-block-audio audio::-webkit-media-controls-panel {
+  background-color: #ffffff;
+}
