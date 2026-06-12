@@ -186,45 +186,6 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Neue Montreal",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/neue-montreal/neue-montreal-400-normal.woff2"
-							]
-						},
-						{
-							"fontFamily": "Neue Montreal",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/neue-montreal/neue-montreal-400-italic.woff2"
-							]
-						},
-						{
-							"fontFamily": "Neue Montreal",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/neue-montreal/neue-montreal-700-normal.woff2"
-							]
-						},
-						{
-							"fontFamily": "Neue Montreal",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/neue-montreal/neue-montreal-700-italic.woff2"
-							]
-						}
-					],
-					"fontFamily": "Neue Montreal, sans-serif",
-					"name": "Neue Montreal",
-					"slug": "neue-montreal"
-				},
-				{
-					"fontFace": [
-						{
 							"fontFamily": "Manrope",
 							"fontStyle": "normal",
 							"fontWeight": "400",
