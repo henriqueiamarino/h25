@@ -183,10 +183,17 @@ a {
 }
 
 /*
- * Jetpack Like — zero inherited margins so it lines up with the sharing buttons.
+ * Jetpack Like — the widget iframe is hard-coded to 55px with its content
+ * pinned to the top, so centering floats it above the sharing buttons.
+ * Drop the reserved min-height and crop the iframe to its content height.
  */
 
-.wp-block-jetpack-like .sharedaddy,
+.wp-block-jetpack-like .jetpack-likes-widget-wrapper {
+	min-height: 0 !important;
+}
+
 .wp-block-jetpack-like iframe {
+	height: 40px !important;
 	margin: 0 !important;
+	vertical-align: middle;
 }
