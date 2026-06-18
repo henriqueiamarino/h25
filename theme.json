@@ -594,7 +594,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)",
 					"letterSpacing": "0rem",
-					"lineHeight": 1.600000000000000088817841970012523233890533447265625
+					"lineHeight": 1.6
 				}
 			},
 			"core/post-date": {
@@ -961,14 +961,14 @@
 					"fontStyle": "normal",
 					"fontWeight": "600",
 					"letterSpacing": "0rem",
-					"lineHeight": 1.399999999999999911182158029987476766109466552734375
+					"lineHeight": 1.4
 				}
 			},
 			"h4": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)",
 					"letterSpacing": "0rem",
-					"lineHeight": 1.399999999999999911182158029987476766109466552734375
+					"lineHeight": 1.4
 				}
 			},
 			"h5": {

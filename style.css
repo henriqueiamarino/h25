@@ -172,3 +172,12 @@ a {
 .wp-block-table th {
 	text-align: left;
 }
+
+/*
+ * Stripes — odd-row cells use the tertiary preset.
+ */
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) td,
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) th {
+	background-color: var(--wp--preset--color--tertiary);
+}
