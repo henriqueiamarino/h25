@@ -1,111 +1,11 @@
 <?php
 /**
- * Title: Sidebar Topics
+ * Title: sidebar-topics
  * Slug: h25/sidebar-topics
  * Inserter: no
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Topics"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"stretch","orientation":"vertical"}} -->
-<div class="wp-block-group alignwide" id="topics"><!-- wp:heading {"metadata":{"name":"Caput"},"className":"no-underline","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.03rem"}},"fontSize":"x-small"} -->
-<h2 class="wp-block-heading no-underline has-x-small-font-size" style="letter-spacing:0.03rem;text-transform:uppercase"><?php esc_html_e('Things I write about', 'h25');?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:group {"metadata":{"name":"Category Row"},"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sAI%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/ai/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sHistory%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/history/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sMilano%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/milano/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sMonths%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/months/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sReviews%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/reviews/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sThoughts%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/thoughts/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sTravel%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/travel/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Category"},"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"1px","style":"dotted"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-top-style:dotted;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"metadata":{"name":"Arrow"}} -->
-<p><?php esc_html_e('→', 'h25');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"metadata":{"name":"Category"},"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sWordPress%2$s', 'h25' ), '<a href="' . esc_url( 'https://iamarino.com/category/blog/wordpress/' ) . '">', '</a>' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:spacer {"height":"2.5vh","metadata":{"name":"2.5VH"}} -->
-<div style="height:2.5vh" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:group {"metadata":{"name":"Blogroll"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+<!-- wp:group {"metadata":{"name":"Blogroll"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"},"anchor":"blogroll"} -->
 <div id="blogroll" class="wp-block-group"><!-- wp:heading {"metadata":{"name":"Caput"},"className":"no-underline","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.03rem"}},"fontSize":"x-small"} -->
 <h2 class="wp-block-heading no-underline has-x-small-font-size" style="letter-spacing:0.03rem;text-transform:uppercase"><?php esc_html_e('Recommended Blogs', 'h25');?></h2>
 <!-- /wp:heading -->
@@ -117,8 +17,8 @@ echo sprintf( esc_html__( '%1$sWordPress%2$s', 'h25' ), '<a href="' . esc_url( '
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"no-underline"} -->
-<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the start of a 'a' HTML element, 3. is the end of a 'a' HTML element, 4. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$s%2$sKelly Hoffman%3$s%4$s', 'h25' ), '<a href="' . esc_url( 'https://kelly.blog/' ) . '">', '<a href="' . esc_url( 'https://kelly.blog/' ) . '" target="_blank" rel="noreferrer noopener">', '</a>', '</a>' ); ?></p>
+<p class="no-underline"><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element, 3. is the start of a 'a' HTML element, 4. is the end of a 'a' HTML element */ 
+echo sprintf( esc_html__( '%1$s%2$s%3$sKelly Hoffman%4$s', 'h25' ), '<a href="' . esc_url( 'https://kelly.blog/' ) . '">', '</a>', '<a href="' . esc_url( 'https://kelly.blog/' ) . '" target="_blank" rel="noreferrer noopener">', '</a>' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

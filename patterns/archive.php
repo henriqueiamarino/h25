@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Archive
+ * Title: archive
  * Slug: h25/archive
  * Inserter: no
  */
@@ -26,7 +26,7 @@
 <!-- wp:group {"metadata":{"name":"Query Loop Card"},"className":"hover-invert","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"8px"}},"backgroundColor":"base","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
 <div class="wp-block-group hover-invert has-base-background-color has-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|20","left":"0"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:post-featured-image {"aspectRatio":"4/3","style":{"color":{"duotone":"var:preset|duotone|duotone-default"}}} /--></div>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"color":{"duotone":"var:preset|duotone|duotone-default"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"75%"} -->
