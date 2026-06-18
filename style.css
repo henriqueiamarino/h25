@@ -169,6 +169,6 @@ a {
  * Header aligned left
  */
 
-.first-column-half th {
+.wp-block-table th {
 	text-align: left;
 }
